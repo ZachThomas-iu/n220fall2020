@@ -38,7 +38,6 @@ function draw() {
         //If one of the circles reaches 300, the circle is removed from the array.
         if(yPos[i] > 300){
             yPos.splice();
-            console.log(yPos);
         }
     }
 }
