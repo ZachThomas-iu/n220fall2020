@@ -69,8 +69,6 @@ OBJECT METHODS
 -   Can affect the object's properties
 -    Access properties inside of a method using this keyword
 
-
-
 */
 
 /*
@@ -107,14 +105,23 @@ function draw() {
 ARRAYS OF OBJECTS
 -   It's possible to make more complex data structures consisting of objects inside of an array. 
     -   Or vice versa, but this won't be important until later. 
-
+*/
 let pants = [
     { type: "jeans", condition: "fair", age: 2 },
     { type: "khakis", condition: "good", age: 0.1 },
     { type: "sweats", condition: "gross", age: 12 }
 ];
-*/
 
+let pencils = [
+    { type: "wood", sharpen: "yes, it's a wood pencil you dumb" },
+    { type: "mechanical", sharpen: "yes, if you want to ruin your sharpener"}
+];
+
+pencils[1].type = "mega";
+console.log(pencils[1].type);
+
+
+/*
 var circles = [
     { x: 100, y: 20, r: 5 },
     { x: 20, y: 50, r: 50 },
@@ -139,7 +146,7 @@ function draw() {
         console.log(circles[i]);
 
         let currentCircle = circles[i];
-        circle(currentCircle.x, currentCircle.y, currentCircle.r)
+        circle(currentCircle.x, currentCircle.y, currentCircle.r);
 
         //This is how the syntax normally looks above without the variable
         //circle(circles[i].x, circles[i].y, circles[i].r);
@@ -159,3 +166,4 @@ function draw() {
         }
     }
 }
+*/

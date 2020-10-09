@@ -57,7 +57,7 @@ function draw(){
 
     //Fill in the parameters of collideRect in an if statement. 
     //If collideRect returns true, the if statement activates. 
-    if (collideRect(xPos, yPos, mouseX, 380, 200, 50)){
+    if (collideRect(xPos, yPos, 200, 380, 200, 50)){
 
         //Reverse the Y speed of the ball so it bounces in the opposite direction.
         ySpeed *= -1;
