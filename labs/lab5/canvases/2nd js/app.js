@@ -67,7 +67,7 @@ function draw(){
     }
 
     //Reverse the Y speed of the ball if it hits the top border so it bounces in the opposite direction.
-    if (yPos < 0){
+    if (yPos < 0 ){
         ySpeed *= -1;
     }
 
