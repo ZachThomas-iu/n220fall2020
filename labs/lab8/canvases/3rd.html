@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+
+    <!--
+        3) Password Protected
+
+    Create an application with two input fields and one button.
+
+    When the button is clicked, verify the user has written 
+    these (exact) strings in the first and second field:
+
+    First field should be  "Username"
+    Second field should be  "Password"
+
+    If the two fields match, update a DIV on the page with the 
+    text "Success" or else "Wrong information".
+
+    For this assignment: use only one if statement to to the check.
+
+    Remember you'll need to use the double-equals (==) to 
+    check for equality, and the double-ampersand to check if two things are true.
+
+    if( (oneThingIsTrue) && (anotherThingIsTrue) ) {
+
+    }
+    -->
+
+        <h3>3 - Password Protected</h3>
+
+        <!--This is the textbox where users put in how much they spent.-->
+        <input id="username" />
+
+        <!--Everything below this will go to another line.-->
+        <br />
+
+        <!--This is the textbox where users put in how much they spent.-->
+        <input id="password" />
+
+        <!--Everything below this will go to another line.-->
+        <br />
+
+        <!--Create a button that calls upon a function in the javascript page.-->
+        <button onclick="verify()">Verify</button>
+
+        <!--The results from "verify()" will be displayed here.-->
+        <div id="dvVerification">Please insert your username and password.</div>
+
+        <script src="js/3.js"></script>
+
+    </body>
+</html>    

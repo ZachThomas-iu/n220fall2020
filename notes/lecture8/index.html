@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- We're mostly done with all the p5 stuff, we'll be focusing on HTML for a while. -->
+
+<!--
+    INPUT
+
+    Inputs are HTML tags that put fields onto the page.
+    We can access the input values inside a function to get data from a user.
+    We will access them by getting a HTMLElementReference to the input.
+
+    <input id="username" />
+
+
+    GETTING A REFERENCE TO THE INPUT
+
+    Using document.querySelector and the ID of the element
+
+    HTML
+    <input id="txtName" />
+
+    JS
+    let txtName = document.querySelector("#txtName");
+-->
+
+    <!--
+        We'll get a small little text box that people can type in.
+        
+        <input id="txtName" />
+    -->
+
+    <!--
+        Problem is, that text box won't add anything inside the console.
+        This is where we add a button to get a value from the input.
+        
+        <button onclick="rollDie()">ROLL!</button>
+
+        Note that the button has some javascript in it. 
+
+        We also need to write ".value" in our javascript after the respective tag
+        to make sure the code gets that value after it's been written. 
+    -->
+
+        <input id="txtName" />
+
+        <!--This creates a line break so not everything is on the same line.-->
+        <br />
+
+        <!--The "ROLL!" will be the text inside the button.-->
+        <button onclick="rollDie()">ROLL!</button>
+
+    <!--
+        The dice roll is neat and all, but we can only see it in the
+        console log right now.
+
+        Let's make it show up on the page. 
+    -->
+
+        <br />
+        <div id="dvResult"></div>
+    
+    <!--The script tag will always come before the /body tag.-->
+    <script src="js/app.js"></script>
+
+</body>
+</html>

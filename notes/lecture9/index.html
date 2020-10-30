@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+        Interestingly, we aren't using a separate CSS document, he wants all the
+        style to be done right here using the <style> tag.
+    -->
+    <style>
+        #heroimage {
+            width: 100px;
+            height: 100px;
+
+            /* No more words for colors, he said no more. */
+            background-color: #FF0000;
+
+            /* The object will start at (0, 0) and will be manipulated by the upcoming tags. */
+            /* position: absolute;
+
+            /* Move this 100px from the top and 100px from the left. */
+            /* top: 100px;
+            /* left: 100px;
+
+            /* Create a margin around the box of 10px. */
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Don't add the "#" in the id.-->
+    <!--This div is being manipulated in the style tag.-->
+    <div id="heroimage"></div>
+
+    <!--This div is being manipulated in javascript.-->
+    <!--We've removed the button since the div can tell when it's been clicked.-->
+    <div id="coin" onclick="flipCoin()"></div>
+
+    <p>Henlo friendo.</p>
+    <script src="js/app.js"></script>
+</body>
+</html>
