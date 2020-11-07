@@ -16,7 +16,7 @@ for (i = 0; i < 100; i++){
     let manyDiv = document.createElement("div");
 
     //Set a variable for our random colors. 
-    let randomNumber = Math.floor(Math.random() * 999999);
+    let randomNumber = Math.floor(Math.random() * 1000000);
 
     //Give the divs random colors. 
     manyDiv.style.backgroundColor = "#" + randomNumber;
