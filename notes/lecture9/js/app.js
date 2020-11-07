@@ -196,7 +196,7 @@ PUT THE ELEMENT ON THE PAGE
 Use .appendChild on an element reference to add your new element to the page. 
 The an easy place for this is document.body.appendChild (idk what that typo is). 
 
-let el = document.createelement("div");
+let el = document.createElement("div");
 el.style.backgroundcolor = "#aaa";
 el.innerHTML = "solar rays";
 
@@ -257,3 +257,4 @@ function flipCoin() {
     //Place the object on the page. 
     document.body.appendChild(newEl);
 }
+
